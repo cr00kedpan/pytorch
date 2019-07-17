@@ -619,7 +619,7 @@ def configure_extension_build():
     # looked up in libtorch_python.so first, by making sure it comes
     # before libcaffe2.so in the linker command.
     main_link_args.extend(CAFFE2_LIBS)
-
+     # this is if
     if cmake_cache_vars['USE_CUDA']:
         if IS_WINDOWS:
             cuda_lib_path = CUDA_HOME + '/lib/x64/'
